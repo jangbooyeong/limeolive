@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라임올리브</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script defer src="./scripts/main.js"></script>
+  <script defer src="./scripts/header.js"></script>
+</head>
+<body>
+  <!-- 탑 컴포넌트 -->
+  <div id="topContainer"></div>
+  <!-- 헤더 컴포넌트 -->
+  <div id="headerContainer"></div>
+  
+  <!-- 화면 슬라이스 -->
+  <div class="inner">
+    <!-- pc용 화면 -->
+    <div class="swiper-container _use-pc">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img id="slide1" src="./assets/intro-images1.jpg" alt="Image 1">
+        </div>
+        <div class="swiper-slide">
+          <img id="slide2" src="./assets/intro-images2.jpg" alt="Image 2">
+        </div>
+        <div class="swiper-slide">
+          <img id="slide3" src="./assets/intro-images3.jpg" alt="Image 3">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- mobile용 화면 -->
+      <div class="swiper-container _use-m">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img id="slide1" src="./assets/introM-images1.jpg" alt="Image 1">
+          </div>
+          <div class="swiper-slide">
+            <img id="slide2" src="./assets/introM-images2.jpg" alt="Image 2">
+          </div>
+          <div class="swiper-slide">
+            <img id="slide3" src="./assets/introM-images3.jpg" alt="Image 3">
+          </div>
+        </div>
+      </div>
+
+      <!-- 화면 json데이터 구현 -->
+      <header class="section-header">
+        <h1 class="section-title">
+          추천 아이템
+        </h1>
+      </header>
+        <ul id="section-wrapper"></ul>
+
+      <!-- 화면 더보기 버튼 구현 -->
+      <header class="section-header">
+        <h1 class="section-title">
+          전체 상품
+        </h1>
+      </header>
+      <ul id="list-wrapper"></ul> 
+      <button id="more-button">더보기</button>
+  </div>
+
+  <!-- 푸터 컴포넌트 -->
+  <div id="footerContainer"></div>
+</body>
+</html>
+
+
