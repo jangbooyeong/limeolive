@@ -1,0 +1,45 @@
+/* 탑 메뉴 */
+#topContainer{
+background-color:#F8F8F8;
+}
+
+.top-menu {
+  display: flex;
+  height: 36px;
+
+  justify-content: right;
+  color:#999999;
+  align-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top__nav-item {
+  font-size: 12px;
+}
+
+.top__nav-item a {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+}
+
+@media (max-width: 768px) {
+    /* 탑버튼 */
+    .top-menu {
+      display: none;
+    }
+    #topButton {
+      z-index: 2;
+    }
+}
+@media (min-width: 769px) {
+    /* 탑버튼 */
+    .top__nav-item {
+      display: inline-block;
+    }
+    .top__nav-item a {
+      padding: 0 0.6em;
+    }
+}
