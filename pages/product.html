@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>라임올리브</title>
+  <script defer src="./product.js"></script>
+  <script defer src="../scripts/header.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+  <!-- 탑 컴포넌트 -->
+  <div id="topContainer"></div>
+  <!-- 헤더 컴포넌트 -->
+  <div id="headerContainer"></div>
+  <!-- 화면 슬라이스 -->
+  <div class="prod-info-wrap inner">
+    <div class="info info-left">
+        <div class="swiper-container">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="info info-right">
+      <div class="prod-info-top"></div>
+      <div class="prod-info-price"></div>
+      <div class="prod-infobox">
+        <ul>
+          <li>
+            <span>원산지</span>
+            <span>중국</span>
+          </li>
+          <li>
+            <span>제조사</span>
+            <span>브랜드마켓코리아</span>
+          </li>
+        </ul>
+      </div>
+      <div class="prod-infobox">
+        <ul>
+          <li>
+            <span>배송비</span>
+            <div>
+              <span class="infobox-strong">0원</span>
+              <p class="infobox-jeju">(제주 및 도서산간 추가 3,000원)</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="prod-info-int">
+        <p class="prod-title">수량</p>
+        <div class="prod-quantity">
+          <button class="prod-quantity-plus" type="button">
+            <span class="sr-only">수량빼기</span>
+            -
+          </button>
+          <input type="text" value="1" class="prod-quantity__input" maxlength="6" autocomplete="off">
+          <button class="prod-quantity-minus" type="button">
+            <span class="sr-only">수량더하기</span>
+            + 
+          </button>
+        </div>
+      </div>
+      <div class="prod-info-total"></div>
+      <div class="prod-info-button">
+        <a id="cartBtn" class="btn btn-outline-black btn-lg">장바구니</a>
+        <a id="orderBtn" class="btn btn-black btn-lg">구매하기</a>
+      </div>
+    </div>  
+  </div>
+  <div class="prod-detail-contents">
+    <h2 class="prod-detail-title">상세정보</h2>
+    <div class="prod-detail-wrapper inner">
+      <div class="prod-detail-list"></div>
+    </div>
+  </div>
+  <!-- 푸터 컴포넌트 -->
+  <div id="footerContainer"></div>
+</body>
+</html>
+
