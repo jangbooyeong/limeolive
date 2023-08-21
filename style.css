@@ -1,0 +1,92 @@
+@import url("./styles/top.css");
+@import url("./styles/header.css");
+@import url("./styles/main.css");
+@import url("./styles/footer.css");
+@import url("./pages/product.css");
+@import url("./pages/product-list.css");
+@import url("./pages/login.css");
+@import url("./pages/join.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+  :root {
+    --font-code: 'Nanum Gothic Coding', monospace;;
+  }
+
+  /* ===== 리셋 구간 ===== */
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+
+  /* 개발용 설정 */
+  min-height: 200vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong, em {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl { margin: 0; }
+dt {display: inline;}
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure { margin: 0; }
+
+a, del {
+  text-decoration: none;
+  color: inherit;
+}
+
+button{
+  background: inherit; 
+  border:none; 
+  box-shadow:none; 
+  border-radius:0; 
+  padding:0; 
+  cursor:pointer
+}
+
+th { font-weight: normal; }
+
+address { font-style: inherit; }
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
