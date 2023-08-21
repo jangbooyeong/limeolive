@@ -1,0 +1,26 @@
+{
+  "productList" : [
+    {
+      "category" : "1",
+      "h2" : "식기/수저통",
+      "em" : "6",
+      "best" : "인기상품",
+      "row" : "낮은가격",
+      "high" : "높은가격",
+      "bestT" : "../pages/product-list.html?category=1&sStep=bestT",
+      "rowT" : "../pages/product-list.html?category=1&sStep=rowT",
+      "highT" : "../pages/product-list.html?category=1&sStep=highT"
+    },
+    {
+      "category" : "2",
+      "h2" : "보&냉용품/컵",
+      "em" : "8",
+      "best" : "인기상품",
+      "row" : "낮은가격",
+      "high" : "높은가격",
+      "bestT" : "../pages/product-list.html?category=2&sStep=bestT",
+      "rowT" : "../pages/product-list.html?category=2&sStep=rowT",
+      "highT" : "../pages/product-list.html?category=2&sStep=highT"
+    }
+  ]
+}
