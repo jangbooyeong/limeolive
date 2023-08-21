@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <script src="../scripts/header.js"></script>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <input type="checkbox" class="header__menu-btn">
+      <a href="#" class="header__search">
+        <span class="sr-only">검색</span>
+      </a>
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav-item">카테고리</li>
+          <li class="header__nav-item">
+            <a id="cate1" href="../pages/product-list.html?category=1">식기/수저통</a>
+          </li>
+          <li class="header__nav-item">
+            <a id="cate2" href="../pages/product-list.html?category=2">보&냉용품/컵</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="header__nav-item">게시판</li>
+          <li class="header__nav-item">
+            <a href="../pages/login.html">로그인</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="../pages/join.html">회원가입</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h1>
+      <a href="../index.html" class="header__homelink">
+        <img src="../assets/logo.jpg" alt="홈으로" class="header__logo">
+      </a>
+    </h1>
+    <div class="header__right">
+      <a href="#" class="header__cart">
+        <span class="sr-only">CART</span>
+      </a>
+      <a href="#" class="header__my-page">
+        <span class="sr-only">my</span>
+      </a>
+    </div>
+  </header>
+  <button id="topButton" onclick="scrollToTop()">
+    <span class="sr-only">최상단으로가기</span>
+  </button>
+</body>
+</html>
+
+
+<!-- 
+그니깐 어...음 일단은 products.json에 각 키에 category : 1 . or category : 2 를 내가 표출하고싶은 이미지에 넣고 그후  
+urlParams.get('category')후 find 하기  -->
