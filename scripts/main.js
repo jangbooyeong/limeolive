@@ -113,6 +113,7 @@ async function displayItems() {
 }
 displayItems();
 
+
 // hidden 갯수별 숨김 함수
 async function loadInitialScreen() {
   try {
@@ -157,9 +158,6 @@ function showMoreItems() {
     moreButton.style.display = "none"; // "더보기" 버튼을 숨깁니다.
   }
 }
-
-
-
 
 
 
