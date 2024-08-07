@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
         categoryGoodsData.sort((a, b) => {
           const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ''));
           const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ''));
-          return priceB - priceA; // 오름차순으로 정렬
+          return priceB - priceA; // 내림차순으로 정렬
         }); 
         categoryGoodsData.forEach(item => {
           const itemElement = categoryGoodsItem(item);
