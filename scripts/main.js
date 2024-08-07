@@ -1,6 +1,6 @@
 
 // 탑 컴포넌트
-fetch("./components/top.html")
+fetch("../components/top.html")
   .then(response => response.text())
   .then(data => {
     const topContainer = document.getElementById("topContainer");
@@ -8,7 +8,7 @@ fetch("./components/top.html")
   });
 
 // 헤더 컴포넌트
-fetch("./components/header.html")
+fetch("../components/header.html")
   .then(response => response.text())
   .then(data => {
     const headerContainer = document.getElementById("headerContainer");
@@ -16,7 +16,7 @@ fetch("./components/header.html")
   });
 
 // 푸터 컴포넌트
-fetch("./components/footer.html")
+fetch("../components/footer.html")
   .then(response => response.text())
   .then(data => {
     const footerContainer = document.getElementById("footerContainer");
@@ -46,7 +46,7 @@ const swiperm = new Swiper('._use-m', {
 // 데이터 받아오기
 async function fetchItems() {
   try {
-    const response = await fetch("./data/products.json");
+    const response = await fetch("../data/products.json");
     const data = await response.json();
     return data;
   } catch (error) {
@@ -60,7 +60,7 @@ function createItemElement(item) {
   itemElement.classList.add("section-item");
 
   const linkElement = document.createElement("a");
-  linkElement.href = "./pages/product.html?id=" + item.id; 
+  linkElement.href = "./product.html?id=" + item.id; 
   itemElement.appendChild(linkElement);
 
   const solidElement = document.createElement("div");
