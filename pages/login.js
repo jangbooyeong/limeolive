@@ -1,5 +1,5 @@
 // 탑 컴포넌트
-fetch ("/components/top.html")
+fetch ("../components/top.html")
   .then (Response => Response.text())
   .then (data => {
     const topContainer = document.getElementById("topContainer");
@@ -7,7 +7,7 @@ fetch ("/components/top.html")
   })
 
 // 헤더 컴포넌트
-fetch("/components/header.html")
+fetch("../components/header.html")
 .then(response => response.text())
 .then(data => {
   const headerContainer = document.getElementById("headerContainer");
@@ -15,7 +15,7 @@ fetch("/components/header.html")
   });
 
 // 푸터 컴포넌트
-fetch("/components/footer.html")
+fetch("../components/footer.html")
   .then(response => response.text())
   .then(data => {
     const footerContainer = document.getElementById("footerContainer");
